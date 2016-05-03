@@ -1,0 +1,69 @@
+en:
+  lita:
+    handlers:
+      alertlogic:
+        error:
+          customer_not_found: ERROR. Invalid customer. Please check your customer id and try again.
+          json_parse: ERROR parsing JSON response
+          generic: ERROR. Could not process your request. Please check your parameters and try again or run lita help alertlogic for more info
+        warn:
+          standby: Some customers have a lot of data to process, this may take a while. Please Standby...
+        validation:
+          customer_id: "Please supply a valid Customer ID for this request."
+          uuid: "Please supply a valid UUID for this request."
+        help:
+          customerinfo:
+            syntax: lita alertlogic customerinfo <customer_id or customer_name>
+            desc: Lists basic Alert Logic customer information
+          monitoring:
+            appliance_agent_counts:
+              syntax: lita alertlogic appliance agent counts <customer_id>
+              desc: Displays agent counts per appliance
+            policy_agent_counts:
+              syntax: lita alertlogic policies agent counts <customer_id>
+              desc: Displays agent counts per assignment policy
+            agent_ip_counts:
+              syntax: lita alertlogic agent ip counts <customer_id>
+              desc: Displays IP address counts per agent and number of agents with matching IP totals
+          incidents:
+            syntax: lita alertlogic incidents <customer_id>
+            desc: Lists incidents for the current day
+          lm:
+            appliances:
+              syntax: lita alertlogic lm appliances <customer_id>
+              desc: Lists Alert Logic Log Manager appliances for given customer id
+            applianceinfo:
+              syntax: lita alertlogic lm applianceinfo <customer_id> <applaince_uuid>
+              desc: Displays Alert Logic Log Manager appliance details.
+            policies:
+              syntax: lita alertlogic lm policies <customer_id>
+              desc: Displays Alert Logic customer log assignment policies.
+            sources:
+              syntax: lita alertlogic lm sources <customer_id> 
+              desc: Displays Alert Logic customer log sources.
+            hosts:
+              syntax: lita alertlogic lm hosts <customer_id> 
+              desc: Displays Alert Logic customer log hosts.
+          tm:
+            appliances:
+              syntax: lita alertlogic tm appliances <customer_id>
+              desc: Lists Alert Logic Threat Manager appliances for given customer id
+            applianceinfo:
+              syntax: lita alertlogic tm applianceinfo <customer_id> <applaince_uuid>
+              desc: Displays Alert Logic Threat Manager appliance details.
+            policies:
+              syntax: lita alertlogic tm policies <customer_id>
+              desc: Displays Alert Logic customer threat assignment policies.
+            hosts:
+              syntax: lita alertlogic lm hosts <customer_id> 
+              desc: Displays Alert Logic customer log hosts.
+            protectedhosts:
+              status:
+                syntax: lita alertlogic protectedhosts status <customer_id>
+                desc: Displays Alert Logic customer protectedhosts status
+              list:
+                syntax: lita alertlogic protectedhosts list <customer_id>
+                desc: Lists Alert Logic customer protectedhosts
+              search:
+                syntax: lita alertlogic protectedhosts search <customer_id> <phost_name or phost_uuid>
+                desc: Displays Alert Logic customer protectedhost details
