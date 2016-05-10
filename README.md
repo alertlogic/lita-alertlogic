@@ -1,6 +1,10 @@
 # lita-alertlogic
 
 [![Build Status](https://api.travis-ci.org/alertlogic/lita-alertlogic.svg?branch=master)](https://travis-ci.org/alertlogic/lita-alertlogic)
+[![MIT License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://tldrlegal.com/license/mit-license)
+[![RubyGems :: RMuh Gem Version](http://img.shields.io/gem/v/lita-alertlogic.svg)](https://rubygems.org/gems/lita-alertlogic)
+[![Code Climate](https://img.shields.io/codeclimate/github/alertlogic/lita-alertlogic.svg)](https://codeclimate.com/github/alertlogic/lita-alertlogic)
+
 
 **lita-alertlogic** is a handler for [Lita](https://github.com/jimmycuadra/lita). It can be used to pull various data points about Alert Logic customers directly from Hipchat.
 
@@ -59,6 +63,7 @@ Lita.configure do |config|
   config.handlers.alertlogic.tm_api_url = 'https://publicapi.alertlogic.net/api/tm/v1'
   config.handlers.alertlogic.customer_api_url = 'https://api.alertlogic.net/api/customer/v1'
   config.handlers.alertlogic.monitoring_api_url = 'https://api.alertlogic.net/api/monitoring/v1'
+  config.handlers.alertlogic.incident_api_url = 'https://api.alertlogic.net/api/incident'
 end
 ```
 
@@ -92,6 +97,8 @@ Lita.configure do |config|
   config.handlers.alertlogic.lm_api_url = 'https://publicapi.alertlogic.net/api/lm/v1'
   config.handlers.alertlogic.tm_api_url = 'https://publicapi.alertlogic.net/api/tm/v1'
   config.handlers.alertlogic.customer_api_url = 'https://api.alertlogic.net/api/customer/v1'
+  config.handlers.alertlogic.monitoring_api_url = 'https://api.alertlogic.net/api/monitoring/v1'
+  config.handlers.alertlogic.incident_api_url = 'https://api.alertlogic.net/api/incident'
 end
 ```
 
